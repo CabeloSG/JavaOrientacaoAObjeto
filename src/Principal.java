@@ -1,3 +1,4 @@
+
 import br.com.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.screenmatch.modelos.*;
 
@@ -15,12 +16,6 @@ public class Principal {
         meuFilme.avalia(10);
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
-        //meuFilme.somaDasAvaliacoes = 10;
-        //meiFilme.totalDeLancamento = 1;
-        //System.out.println(meuFilme.pegaMedia());
-
-        //Herança, faz um tipo maior um supertipo centralizando essas coisas que são em comum para as duas classes,
-        // e depois a gente pega e nsó especializa ela com as coisas que precisamos separar. O que é de cada um.
 
         Serie lost = new Serie();
         lost.setNome("Lost");
@@ -29,10 +24,7 @@ public class Principal {
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporadas(10);
         lost.setMinutosPorEpisodios(50);
-        //classe mãe generalização e as classes filhas Especializações
-        //Superclasse / Subclasse
-        //Atributos / Campos
-        //Método / Funções
+
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos() + " minutos");
 
         Filme outroFilme = new Filme();
@@ -45,7 +37,6 @@ public class Principal {
         calculadora.inclui(outroFilme);
         calculadora.inclui(lost);
         System.out.println(calculadora.getTempoTotal());
-
 
         ModeloCarro meuCarro = new ModeloCarro();
         meuCarro.definirModelo("Sedan");
@@ -60,19 +51,16 @@ public class Principal {
         gato.emitirSom();
         gato.arranharMoveis();
 
-        // Criando uma conta bancária com saldo inicial de 1000
         ContaBancaria conta = new ContaBancaria();
         conta.depositar(1000);
         conta.consultarSaldo();
 
-        // Realizando operações na conta corrente
         ContaCorrente contaCorrente = new ContaCorrente();
         contaCorrente.depositar(200);
         contaCorrente.cobrarTarifaMensal();
         contaCorrente.consultarSaldo();
         contaCorrente.sacar(150);
         contaCorrente.consultarSaldo();
-
 
         VerificadorPrimo verificador = new VerificadorPrimo();
         verificador.verificarSeEhPrimo(17);
